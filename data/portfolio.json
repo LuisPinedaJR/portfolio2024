@@ -2,7 +2,7 @@
     "name": "Luis",
     "headerTaglineOne": "Hello 👋",
     "headerTaglineTwo": "I'm Luis Pineda",
-    "headerTaglineThree": "UI/UX and Frontend Engineer",
+    "headerTaglineThree": "UI/UX Frontend Engineer",
     "headerTaglineFour": " based in Tampa, Fl.",
     "showCursor": true,
     "showBlog": true,
@@ -119,28 +119,6 @@
             
             "url": "https://agitated-galileo-bbacec.netlify.app/"
           }
-    ],
-    "services": [
-        {
-            "id": "1",
-            "title": "Art Direction",
-            "description": "We help with the creation and development of online advertising ideas, with particular focus on their visual appearance."
-        },
-        {
-            "id": "2",
-            "title": "Branding",
-            "description": "We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors."
-        },
-        {
-            "id": "3",
-            "title": "Web Design",
-            "description": "We build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel."
-        },
-        {
-            "id": "4",
-            "title": "3D Design",
-            "description": "We combine creative design and technical skills to build striking 3D visualizations that bring your project to life."
-        }
     ],
     "aboutpara": "My journey started during MySpace years, I loved adding new pieces of code to my page and liked seeing the changes on the browser, however, I didn't know I could do that as a career. I have been studying web development on my own for about 3 years and completed task work such as Udemy courses, Code academy, etc. I joined Lambda School and my knowledge of computer science and software engineering accelerated and gave me the confidence to work for myself. Today, I currently am a Freelance ReachJS contractor always looking for challenging roles and projects. I am continuing my studies of tech, there is always something new to learn, currently studying design and data science.  Outside of coding, I like to use my hands to get crafty and paint, I am not picasso but it helps relieve stress and it is relaxing. I am a father to a one year old and I truly love being a father, including the changing diapers part. I also enjoy traveling and taking pictures of different architecture structures.",
     "resume": {
