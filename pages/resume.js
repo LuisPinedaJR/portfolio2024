@@ -17,6 +17,7 @@ const Resume = () => {
 
   useEffect(() => {
     setMount(true);
+    setTheme('dark');
     if (!showResume) {
       router.push("/");
     }
