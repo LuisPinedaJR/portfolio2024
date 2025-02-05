@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import data from "../../data/portfolio.json";
 
-const Button = ({ children, type, onClick, classes }) => {
+const Button = React.forwardRef(({ children, type, onClick, classes }, ref) => {
   const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   if (type === "primary") {
     return (
       <button
+        ref={ref}
         onClick={onClick}
         type="button"
         className={`text-sm tablet:text-base p-1 laptop:p-2 m-1 laptop:m-2 rounded-lg ${
@@ -21,6 +32,7 @@ const Button = ({ children, type, onClick, classes }) => {
   }
   return (
     <button
+      ref={ref}
       onClick={onClick}
       type="button"
       className={`text-sm tablet:text-base p-1 laptop:p-2 m-1 laptop:m-2 rounded-lg flex items-center transition-all ease-out duration-300 ${
@@ -34,6 +46,9 @@ const Button = ({ children, type, onClick, classes }) => {
       {children}
     </button>
   );
-};
+});
+
+// Add a display name for better debugging
+Button.displayName = 'Button';
 
 export default Button;

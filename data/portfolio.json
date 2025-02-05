@@ -148,7 +148,7 @@
         ],
         "tagline": "👋  I'm a Software Engineer."
     },
-    "showBlog": false,
+    "showBlog": true,
     "showCursor": true,
     "showResume": true,
     "socials": [

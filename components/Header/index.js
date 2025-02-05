@@ -17,6 +17,19 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
     setMounted(true);
   }, []);
 
+   // Don't render anything until mounted
+   if (!mounted) {
+    return null;
+  }
+
+  const menuIcon = !open
+  ? theme === "dark"
+    ? "/images/menu-white.svg"
+    : "/images/menu.svg"
+  : theme === "light"
+  ? "/images/cancel.svg"
+  : "/images/cancel-white.svg";
+
   return (
     <>
       <Popover className="block tablet:hidden mt-5">
@@ -49,15 +62,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 <Popover.Button>
                   <img
                     className="h-5"
-                    src={`/images/${
-                      !open
-                        ? theme === "dark"
-                          ? "menu-white.svg"
-                          : "menu.svg"
-                        : theme === "light"
-                        ? "cancel.svg"
-                        : "cancel-white.svg"
-                    }`}
+                    src={menuIcon}
                   ></img>
                 </Popover.Button>
               </div>
